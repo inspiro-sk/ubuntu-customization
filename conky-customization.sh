@@ -1,10 +1,12 @@
-# download conky-config from www.pling.com/p/2033080
+# original config downloaded from www.pling.com/p/2033080
 
 sudo apt -y install conky-all jq curl moc
 
 # sudo nano /etc/environment
 # MUFFIN_NO_SHADOWS=1
 
+
+# assuming zip is in ~/Downloads
 unzip ~/Downloads/conky-config.zip ~/Downloads/
 
 rsync -av ~/Downloads/conky-config/conky ~/.config
